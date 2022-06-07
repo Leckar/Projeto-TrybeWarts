@@ -1,12 +1,22 @@
-// Variáveis necessárias para o funcionamento do código;
-
+// Handler do comment text area;
+function commentHandler(e) {
+  const { length } = e.value;
+  const counter = document.querySelector('#counter');
+  counter.innerHTML = `${500 - length}`;
+}
+// Listener do comment text area;
+const commentListener = () => {
+  const comment = document.querySelector('#textarea');
+  comment.addEventListener('keyup', (e) => commentHandler(e.target));
+};
 // Handler do checkbox de agreement;
 function agreementHandler() {
   const submitBtn = document.querySelector('#submit-btn');
   if (submitBtn.disabled) {
-    return submitBtn.disabled = false;
+    submitBtn.disabled = false;
+    return;
   }
-  return submitBtn.disabled = true;
+  submitBtn.disabled = true;
 }
 // Listener do checkbox de agreement;
 const agreementListener = () => {
@@ -33,5 +43,6 @@ const loginBtnListener = () => {
 // Listener do carregamento da página;
 window.onload = () => {
   loginBtnListener();
+  commentListener();
   agreementListener();
 };
