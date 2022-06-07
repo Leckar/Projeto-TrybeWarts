@@ -34,6 +34,7 @@ header {
 
 .flex-container {
   display: flex;
+  padding: 0 0.5%;
 }
 
 main section{
@@ -45,6 +46,7 @@ main section{
   width: 675px;
   display: flex;
   flex-direction: column;
+  gap: 1%;
 }
 
 main label {
