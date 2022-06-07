@@ -26,3 +26,16 @@ header {
 #trybewarts-header-title {
   font-size: 4em;
 }
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+main form{
+    width: 675px;
+}
+
+#trybewarts-forms-logo{
+    height: 500px;
+}
