@@ -108,3 +108,7 @@ footer {
   align-items: center;
   height: 40px;
 }
+
+#form-data{
+  visibility: hidden;
+}

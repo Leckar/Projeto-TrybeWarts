@@ -49,9 +49,16 @@ const loginBtnListener = () => {
   const loginBtn = document.querySelector('#login-confirm');
   loginBtn.addEventListener('click', loginBtnHandler);
 };
+// Listener do botão de submit 
+const submitListener = () => {
+  const submitBtn = querySelector('#submit-btn');
+  submitBtn.addEventListener('click',prevent)
+}
 // Listener do carregamento da página;
 window.onload = () => {
   loginBtnListener();
   commentListener();
   agreementListener();
+  submitListener();
 };
+
