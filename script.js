@@ -1,3 +1,12 @@
+// Handler do botão submit;
+function submitHandler(e) {
+  const element = e.target;
+  element.preventDefault();
+}
+// Listener do botão submit;
+const submitListener = () => {
+  const submitBtn = document.querySelector('#submit-btn');
+};
 // Handler do comment text area;
 function commentHandler(e) {
   const { length } = e.value;
