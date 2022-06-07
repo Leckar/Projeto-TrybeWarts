@@ -1,0 +1,8 @@
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+main form{
+    width: 675px;
+}
