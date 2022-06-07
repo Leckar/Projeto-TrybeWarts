@@ -38,8 +38,8 @@ header {
   padding: 0 0.5%;
 }
 
-#trybewarts-forms-logo{
-    height: 500px;
+#trybewarts-forms-logo {
+  height: 500px;
 }
 
 #email-house-inputs {
@@ -60,12 +60,22 @@ header {
   gap: 3px;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
-}
-
-#label-family{
+#label-family {
   display: flex;
   flex-direction: column;
   gap: 3px;
+}
+
+#submit-btn {
+  width: 30%;
+  background-image: linear-gradient(to right, red, yellow, green, blue);
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px;
+  opacity: 75%;
+  transition: opacity 200ms;
+}
+
+#submit-btn:hover {
+  opacity: 100%;
 }
