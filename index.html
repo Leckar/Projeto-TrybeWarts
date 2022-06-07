@@ -22,15 +22,15 @@
     </form>
   </header>
   <main class="flex-container">
-    <form action="" method="get" id="evaluation-form" class="flex-container">
+    <form action="" method="get" id="evaluation-form">
       <label>Nome e sobrenome: <input id="input-name" required type="text" name="nome" placeholder="Nome">
         <input id="input-lastname" required type="text" name="lastname" placeholder="Sobrenome">
       </label>
       <!-- DIv da linha de e-mail e casa -->
       <div id="email-house-inputs">
-        <label for=""> E-mail: <input id="input-email" required type="email" name="email" placeholder="Email">
+        <label class="flex-label" for="input-email"> E-mail: <input id="input-email" required type="email" name="email" placeholder="Email">
         </label>
-        <label for="">Casa:<select name="houses" id="house">
+        <label class="flex-label" for="house">Casa:<select name="houses" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
             <option id="corvinode-house" value="Corvinode">Corvinode</option>
@@ -39,33 +39,33 @@
         </label>
       </div>
       <label id="label-family" required>Qual sua família?
-        <label for="frontend">
+        <label class="flex-label" for="frontend">
           <input id="frontend" type="radio" name="family" value="Frontend">Frontend
         </label>
-        <label for="backend">
+        <label class="flex-label" for="backend">
           <input id="backend" type="radio" name="family" value="Backend">Backend
         </label>
-        <label for="fullstack">
+        <label class="flex-label" for="fullstack">
           <input id="fullstack" type="radio" name="family" value="FullStack">FullStack
         </label>
       </label>
       <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-      <label for="HoFs">
+      <label class="flex-label" for="HoFs">
         <input id="HoFs" class="subject" type="checkbox" name="HoFs" value="HoFs">HoFs
       </label>
-      <label for="Jest">
+      <label class="flex-label" for="Jest">
         <input id="Jest" class="subject" type="checkbox" name="Jest" value="Jest">Jest
       </label>
-      <label for="Promises">
+      <label class="flex-label" for="Promises">
         <input id="Promises" class="subject" type="checkbox" name="Promises" value="Promises">Promises
       </label>
-      <label for="React">
+      <label class="flex-label" for="React">
         <input id="React" class="subject" type="checkbox" name="React" value="React">React
       </label>
-      <label for="SQL">
+      <label class="flex-label" for="SQL">
         <input id="SQL" class="subject" type="checkbox" name="SQL" value="SQL">SQL
       </label>
-      <label for="Python">
+      <label class="flex-label" for="Python">
         <input id="Python" class="subject" type="checkbox" name="Python" value="Python">Python
       </label>
       <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
@@ -83,12 +83,11 @@
       </div>
       <label class="textarea" for="">Deixe seu comentário:</label>
       <textarea name="" cols="30" rows="10" maxlength="500"></textarea>
-      <label id="label-infos" for="agreement"><input type="checkbox" name="agreement" id="agreement">Você concorda com o
+      <label class="flex-label" id="label-infos" for="agreement"><input type="checkbox" name="agreement" id="agreement">Você concorda com o
         uso das informações acima?</label>
     </form>
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
   </main>
   <script src="./script.js"></script>
 </body>
-
 </html>
