@@ -39,3 +39,7 @@ main form{
 #trybewarts-forms-logo{
     height: 500px;
 }
+
+main form div{
+  display: flex;
+}
