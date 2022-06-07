@@ -17,6 +17,7 @@ header {
   justify-content: space-between;
   text-align: center;
   align-items: center;
+  margin-bottom: 1%;
 }
 
 .trybewarts-header-logo {
@@ -37,28 +38,20 @@ header {
   padding: 0 0.5%;
 }
 
-main section{
-  display: flex;
-  flex-direction: column;
-}
-
 #trybewarts-forms-logo{
     height: 500px;
 }
 
-main form div{
+#email-house-inputs {
   display: flex;
+  gap: 1%;
+  width: 100%;
 }
 
 #evaluation-form {
   width: 675px;
   display: flex;
   flex-direction: column;
-  gap: 1%;
-}
-
-main label {
-  display: flex;
   gap: 1%;
 }
 

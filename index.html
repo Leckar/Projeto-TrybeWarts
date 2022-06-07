@@ -22,29 +22,22 @@
     </form>
     </header>
     <main class="flex-container">
-        <form action="" method="get" id="evaluation-form" class="flex-container">
-            <div>
-            <input id="input-name" required type="text" name="nome" placeholder="Nome">
-            <input id="input-lastname" required type="text" name="lastname" placeholder="Sobrenome">
-            </div>
-            <input id="input-email" required type="email" name="email" placeholder="Email">
-            <select name="houses" id="house">
-                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                <option id="pytherina-house" value="Pytherina">Pytherina</option>
-            </select>
-        </form>
-    </main>
-    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
-    <script src="./script.js"></script>
-
       <form action="" method="get" id="evaluation-form" class="flex-container">
         <label>Nome e sobrenome: <input id="input-name" required type="text" name="nome" placeholder="Nome">
           <input id="input-lastname" required type="text" name="lastname" placeholder="Sobrenome">
         </label>
-        <label for=""> E-mail: <input id="input-email" required type="email" name="email" placeholder="Email">
-        </label>
+        <!-- DIv da linha de e-mail e casa -->
+        <div id="email-house-inputs">
+          <label for=""> E-mail: <input id="input-email" required type="email" name="email" placeholder="Email">
+          </label>
+            <label for="">Casa:<select name="houses" id="house">
+              <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+              <option id="corvinode-house" value="Corvinode">Corvinode</option>
+              <option id="pytherina-house" value="Pytherina">Pytherina</option>
+            </select>
+          </label>
+        </div>
         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
         <label for="HoFs">
           <input id="HoFs" class="subject" type="checkbox" name="HoFs" value="HoFs">HoFs
