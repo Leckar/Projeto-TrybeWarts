@@ -4,7 +4,7 @@ function loginBttnHandler() {
   const loginUsr = document.querySelector('#login-email');
   const loginPwd = document.querySelector('#login-pwd');
   if (!loginUsr.value || !loginPwd.value) {
-    alert('Email ou senha inválidos');
+    alert('Email ou senha inválidos.');
   } else {
     alert('Olá, Tryber!');
     loginUsr.value = '';
