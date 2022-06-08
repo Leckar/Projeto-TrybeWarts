@@ -22,11 +22,14 @@
     </form>
   </header>
   <main class="flex-container">
+    <!-- Form original -->
+    <section id="form-section">
     <form action="" method="get" id="evaluation-form">
-      <label>Nome e sobrenome: <input id="input-name" required type="text" name="nome" placeholder="Nome">
+      <!-- Nome e sobrenome -->
+      <label>Nome e sobrenome: <input id="input-name" required type="text" name="name" placeholder="Nome">
         <input id="input-lastname" required type="text" name="lastname" placeholder="Sobrenome">
       </label>
-      <!-- DIv da linha de e-mail e casa -->
+      <!-- E-mail e casa -->
       <div id="email-house-inputs">
         <label class="flex-label" for="input-email"> E-mail: <input id="input-email" required type="email" name="email" placeholder="Email">
         </label>
@@ -38,37 +41,38 @@
           </select>
         </label>
       </div>
-      <label id="label-family" required>Qual sua família?</label>
-      <div>
-        <label class="flex-label" for="frontend">
+      <!-- Família -->
+      <label id="label-family" for="family" required>Qual sua família?</label>
+      <label class="flex-label" for="frontend">
           <input id="frontend" type="radio" name="family" value="Frontend">Frontend
-        </label>
-        <label class="flex-label" for="backend">
-          <input id="backend" type="radio" name="family" value="Backend">Backend
-        </label>
-        <label class="flex-label" for="fullstack">
-          <input id="fullstack" type="radio" name="family" value="FullStack">FullStack
-        </label>
-      </div>
+      </label>
+      <label class="flex-label" for="backend">
+        <input id="backend" type="radio" name="family" value="Backend">Backend
+      </label>
+      <label class="flex-label" for="fullstack">
+        <input id="fullstack" type="radio" name="family" value="FullStack">FullStack
+      </label>
+      <!-- Conteúdo almejado -->
       <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <label class="flex-label" for="HoFs">
-        <input id="HoFs" class="subject" type="checkbox" name="HoFs" value="HoFs">HoFs
+        <input id="HoFs" class="subject" type="checkbox" name="subject" value="HoFs">HoFs
       </label>
       <label class="flex-label" for="Jest">
-        <input id="Jest" class="subject" type="checkbox" name="Jest" value="Jest">Jest
+        <input id="Jest" class="subject" type="checkbox" name="subject" value="Jest">Jest
       </label>
       <label class="flex-label" for="Promises">
-        <input id="Promises" class="subject" type="checkbox" name="Promises" value="Promises">Promises
+        <input id="Promises" class="subject" type="checkbox" name="subject" value="Promises">Promises
       </label>
       <label class="flex-label" for="React">
-        <input id="React" class="subject" type="checkbox" name="React" value="React">React
+        <input id="React" class="subject" type="checkbox" name="subject" value="React">React
       </label>
       <label class="flex-label" for="SQL">
-        <input id="SQL" class="subject" type="checkbox" name="SQL" value="SQL">SQL
+        <input id="SQL" class="subject" type="checkbox" name="subject" value="SQL">SQL
       </label>
       <label class="flex-label" for="Python">
-        <input id="Python" class="subject" type="checkbox" name="Python" value="Python">Python
+        <input id="Python" class="subject" type="checkbox" name="subject" value="Python">Python
       </label>
+      <!-- Avaliação -->
       <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
       <div>
         <input type="radio" name="rate" value="1"> 1
@@ -82,15 +86,21 @@
         <input type="radio" name="rate" value="9"> 9
         <input type="radio" name="rate" value="10"> 10
       </div>
+      <!-- Comentário -->
       <label class="textarea" for="">Deixe seu comentário:</label>
-      <div id="comment-div"><textarea id="textarea" name="comment" cols="30" rows="10" maxlength="500"></textarea><span id="counter">500</span></div>
+      <div id="comment-div">
+        <textarea id="textarea" name="comment" cols="30" rows="10" maxlength="500"></textarea>
+        <span id="counter">500</span>
+      </div>
+      <!-- Termo de aceite -->
       <label class="flex-label" id="label-infos" for="agreement"><input type="checkbox" name="agreement" id="agreement">Você concorda com o
         uso das informações acima?</label>
+      <!-- Botão de submit -->
       <button id="submit-btn" disabled type="submit">Enviar</button>
     </form>
+  </section>
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
   </main>
-
   <footer>
     Direitos reservados à Trybewarts©
   </footer>
